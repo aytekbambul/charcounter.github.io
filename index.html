@@ -19,12 +19,12 @@
          <div class="w-full h-10 flex justify-between items-center text-white mt-6">
             <!-- logo -->
              <div>
-                <h2 class="text-2xl font-semibold select-none">Character Counter</h2>
+                <h2 class="max-sm:text-base min-sm:text-lg max-md:text-xl min-md:text-2xl font-semibold select-none">Character Counter</h2>
              </div>
              <!-- dark mode -->
               <div>
-                <label class="size-10 bg-zinc-700 flex justify-center items-center rounded-md cursor-pointer hover:scale-110">
-                    <button class="text-2xl cursor-pointer">
+                <label class="max-sm:size-6 min-sm:size-10 bg-zinc-700 flex justify-center items-center rounded-md cursor-pointer hover:scale-110">
+                    <button class="max-sm:text-base min-sm:text-xl  cursor-pointer">
                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0a.996.996 0 0 0 0-1.41l-1.06-1.06zm1.06-10.96a.996.996 0 0 0 0-1.41.996.996 0 0 0-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36a.996.996 0 0 0 0-1.41.996.996 0 0 0-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"></path></svg>                </button>
                     </label>
                 </div>
@@ -33,9 +33,9 @@
 
         <!-- TEXT AREA -->
         <div class="w-full text-white flex flex-col items-center text-center mt-6">
-            <h3  class="text-6xl font-bold leading-16 select-none">Analyze your text<br>in real-time</h3>
+            <h3  class="w-full max-sm:text-4xl max-md:text-5xl max-xl:text-6xl max-2xl:text-7xl min-2xl:text-7xl  text-amber-300 font-bold leading-16 select-none">Analyze your text<br>in real-time</h3>
             <textarea id="textArea" class="w-full outline-none resize-none bg-zinc-800 rounded-xl p-3 mt-10" rows="10" name="" id="" placeholder="Start typing here...(or paste your text)"></textarea>
-            <button id="btntik" class="size-1/4 py-2 bg-emerald-500 text-zinc-900 text-xl font-medium rounded-lg mt-2 active:scale-105 hover:brightness-110 cursor-pointer">Finish!!</button>
+            <button id="btntik" class="size-1/5 py-2 bg-emerald-500 text-zinc-900 text-xl font-medium rounded-lg mt-2 active:scale-105 hover:brightness-110 cursor-pointer">Finish!!</button>
         </div>
 
 
@@ -46,20 +46,20 @@
 
             <!-- WORD -->
              <div class="h-40 bg-[#fb5853] text-zinc-900 rounded-2xl flex flex-col items-start justify-center px-5 hover:scale-105 hover:brightness-110 cursor-pointer">
-                 <h4 id="wordH4" class="text-7xl font-semibold">00</h4>
-                 <p class="text-2xl font-normal mt-2">Word Count</p>
+                 <h4 id="wordH4" class="max-sm:text-4xl max-md:text-5xl max-xl:text-6xl max-2xl:text-7xl min-2xl:text-7xl font-semibold">00</h4>
+                 <p class="max-sm:text-base max-md:text-lg min-md:text-2xl font-normal mt-2">Word Count</p>
              </div>
 
              <!-- SENTENCE -->
             <div class="h-40 bg-[#f48642] text-zinc-900 rounded-2xl flex flex-col items-start justify-center px-5 hover:scale-105 hover:brightness-110 cursor-pointer">
-                <h4 id="sentenceH4" class="text-7xl font-semibold">00</h4>
-                <p class="text-2xl font-normal mt-2">Sentence Count</p>
+                <h4 id="sentenceH4" class="max-sm:text-4xl max-md:text-5xl max-xl:text-6xl max-2xl:text-7xl min-2xl:text-7xl font-semibold">00</h4>
+                <p class="max-sm:text-base max-md:text-lg min-md:text-2xl font-normal mt-2">Sentence Count</p>
             </div>
 
             <!-- TOTAL -->
             <div class="h-40 bg-[#fcc03e] text-zinc-900 rounded-2xl flex flex-col items-start justify-center px-5 hover:scale-105 hover:brightness-110 cursor-pointer">
-                <h4 id="totalH4" class="text-7xl font-semibold">00</h4>
-                <p class="text-2xl font-normal mt-2">Total Character</p>
+                <h4 id="totalH4" class="max-sm:text-4xl max-md:text-5xl max-xl:text-6xl max-2xl:text-7xl min-2xl:text-7xl font-semibold">00</h4>
+                <p class="max-sm:text-base max-md:text-lg min-md:text-2xl font-normal mt-2">Total Character</p>
             </div>
 
         </div>
